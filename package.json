@@ -1,0 +1,19 @@
+{
+  "author": "Kaique Amorim",
+  "name": "nu",
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "dependencies": {
+    "three": "^0.156.1"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.18.2",
+    "sass": "^1.66.1",
+    "vite": "^4.4.9",
+    "vite-plugin-glsl": "^1.2.1"
+  }
+}

@@ -1,0 +1,103 @@
+@font-face
+  font-family: 'On'
+  src: url('/On.woff2') format('woff2')
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: #FFFEE7
+  font-family: 'On'
+  height: 100vh
+  overflow: hidden
+  width: 100vw
+  user-select: none
+  -moz-user-select: none
+
+h1, h2, h3, span
+  font-weight: 100
+  font-size: 4.2vw
+  line-height: 4.4vw
+
+canvas
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  mix-blend-mode: difference
+
+footer
+  color: white
+  mix-blend-mode: exclusion
+  position: fixed
+
+.logo
+  bottom: 120px
+  left: 110px
+  position: fixed
+  mix-blend-mode: difference
+
+  svg
+    fill: white
+
+.lil-gui
+  --title-background-color: #FFC83A
+  --font-family: 'On'
+  --font-family-mono: 'On'
+  --font-size: 13px
+  --input-font-size: 13px
+  --background-color: #FFC83A
+  --widget-height: 32px
+  --padding: 12px
+  --text-color: black
+  --title-height: calc(var(--widget-height) + var(--spacing) * 4)
+  --title-text-color: black
+  --widget-color: black
+  --hover-color: black
+  --focus-color: black
+  --number-color: #2cc9ff
+  border-radius: 6px
+  letter-spacing: 0.2px
+  font-weight: bold
+  --scrollbar-width: 0
+  --folder-indent: 15px
+  --width: 300px
+
+.lil-gui.autoPlace
+  transform: translate3d(0, 20px, 0)
+
+.lil-gui.root > .title
+  opacity: 1
+  border-radius: 12px
+
+.lil-gui.root > .children > .lil-gui > .title
+  border-width: 0
+
+.lil-gui + .controller
+  border-top: 0
+
+.lil-gui .controller.color input[type=text]
+  color: var(--number-color)
+
+.lil-gui .controller.color .display:hover:before
+  border: none
+
+.lil-gui .controller.color input[type=text]
+  display: none
+
+.lil-gui .title:focus
+  text-decoration: none
+
+.lil-gui .title:hover
+  border-radius: 12px
+
+.lil-gui .lil-gui .lil-gui > .children
+  border-left: 0
+
+.lil-gui input
+  color: white
+
+.lil-gui input[type=checkbox]:checked:before
+  content: '•'
+  font-family: 'On'
